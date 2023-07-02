@@ -1,0 +1,47 @@
+:root{
+    --electricBlue:#00FFFF;
+    --hotPink: #FF69B4;
+    --turquoise: #40E0D0;
+    --coral: #FF7F50;
+    --sunnyYellow: #FFFF00;
+   --paleLilac: #E6E6FA;
+   --royalPurple: #6A0DAD;
+   --DarkerPink:#bd5489;
+  
+  }
+
+#about p {
+    margin: auto;
+    text-align: center; /* Added to center align the paragraph */
+    max-width: 70%;
+    font-size: 25px;
+  }
+  
+  #projects {
+    max-width: 50%;
+    font-size: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #projects ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #projects ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #projects ul li a {
+    display: block;
+    margin-left: 20px;
+  }
+
+  #projects ul li a:hover{
+    color: #00FFFF;
+  }

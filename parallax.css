@@ -1,0 +1,124 @@
+:root {
+  --electricBlue: #00FFFF;
+  --hotPink: #FF69B4;
+  --turquoise: #40E0D0;
+  --coral: #FF7F50;
+  --sunnyYellow: #FFFF00;
+  --paleLilac: #E6E6FA;
+  --royalPurple: #6A0DAD;
+  --DarkerPink:#bd5489;
+  --DeepPurple: #7B68EE;
+
+
+}
+
+*{
+box-sizing: border-box;}
+.parallax {
+  perspective: 1px;
+  perspective-origin: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 2em;
+  height: 100vh;
+}
+
+.parallax .group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  margin-top: 10rem;
+}
+
+.parallax .layer {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+#city1 {
+  margin-top: -5rem;
+  fill: var(--hotPink);
+  transform: translateZ(0.25px) scale(0.75) translateY(-1vh);
+}
+
+
+
+#city2 {
+  fill: var(--DeepPurple);
+  transform: translateZ(0px) scale(1) translateY(-1vh);
+}
+
+#city3 {
+  fill: var(--DarkerPink);
+  transform: translateZ(-0.25px) scale(1.25) translateY(-1vh);
+}
+
+#city4{
+  fill: var(--DarkerPink);
+  transform: translateZ(-0.50px) scale(1) translateY(-1vh);
+  margin-top: 10rem;
+
+}
+
+#city5 {
+  fill: var(--royalPurple);
+  transform: translateZ(-0.75px) scale(1.75) translateY(-1vh);
+}
+
+.city2-front {
+  background: var(--royalPurple);
+  width: 100vw;
+  height: 30vh;
+  position: relative;
+  margin-top: -5px;
+}
+
+.city-front {
+  position: relative;
+  margin-top: -5px;
+  background: var(--hotPink);
+  width: 100vw;
+  height: 100%;
+}
+
+.site_name {
+  color: #FFF;
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+.site_name {
+	color: #FFF;
+	display: inline-block;
+	margin: 0 0 0 20px;
+}
+
+.city-front #about {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+
+
+
+/* Hide the scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+
+
+

@@ -1,0 +1,273 @@
+/* Closest font to miami vice vibe */
+@import 'https://fonts.googleapis.com/css?family=Fascinate';
+
+* {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    --electricBlue:#00FFFF;
+    --hotPink: #FF69B4;
+    --turquoise: #40E0D0;
+    --coral: #FF7F50;
+    --sunnyYellow: #FFFF00;
+   --paleLilac: #E6E6FA;
+   --royalPurple: #6A0DAD;
+   --DarkerPink:#bd5489;
+  
+  }
+
+
+body {
+margin: 0;
+    font-family: Fascinate;
+    background-image: linear-gradient(var(--royalPurple), var(--hotPink));
+
+  
+   
+
+}
+
+.item1 {
+    height: 100px;
+    background: transparent;
+}
+
+  
+
+
+
+/* main */
+.item3 {
+    /* grid-area: main; */
+    height: 100vh;
+}
+
+
+
+
+
+
+.social {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    align-items: flex-start; /* Align items to the start of the container */
+    position: fixed;
+    z-index: 6;
+    font-size: 2rem;
+    background: transparent;
+
+}
+
+.social div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.grid-container>div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    /* border: 1px solid white; */
+
+
+}
+
+
+
+
+
+/* name styling */
+.name {
+
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    color: var(--turquoise);
+    /* -webkit-text-stroke: 2px var(--lightBlue); */
+    font-style: italic;
+    z-index: 3;
+}
+
+.name span {
+    background: var(--turquoise);
+    padding: 15px;
+    border-radius: 5px;
+    color: #E97DB1;
+    z-index: 3;
+
+    text-shadow: 10px 10px rgb(9, 9, 204);
+
+}
+
+/* palm effect */
+
+.palm {
+    z-index: 0;
+    position: relative;
+    left: -13rem;
+    top: -5rem;
+    -webkit-box-reflect: right 4rem;
+
+}
+
+
+
+/* sun effect */
+.sun {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    
+}
+
+/* lines of the sun */
+.lineOne,
+.lineTwo,
+.lineThree,
+.lineFour,
+.lineFive,
+.lineSix,
+.lineSeven,
+.lineEight {
+    position: absolute;
+    width: 100%;
+}
+
+.lineOne {
+    top: 0;
+    height: 6rem;
+    background-image: linear-gradient(180deg, var(--sunnyYellow), var(--coral));
+}
+
+.lineTwo {
+    top: 7rem;
+    height: 3rem;
+    background-image: linear-gradient(180deg, var(--coral), var(--hotPink));
+}
+
+.lineThree {
+    top: 11rem;
+    height: 3rem;
+    background-image: linear-gradient(180deg, var(--hotPink), var(--hotPink));
+}
+
+.lineFour {
+    top: 15rem;
+    height: 3rem;
+    background-image: linear-gradient(180deg, var(--hotPink), var(--hotPink));
+}
+
+.lineFive {
+    top: 19rem;
+    height: 3rem;
+    background-image: linear-gradient(180deg, var(--hotPink), var(--hotPink));
+}
+
+.lineSix {
+    top: 23rem;
+    height: 3rem;
+    background-image: linear-gradient(180deg, var(--hotPink), var(--hotPink));
+}
+
+.lineSeven {
+    top: 28rem;
+    height: 2rem;
+    background-image: linear-gradient(180deg, var(--hotPink), var(--hotPink));
+}
+
+.lineEight {
+    top: 32rem;
+    height: 2rem;
+    background-image: linear-gradient(180deg, var(--hotPink), var(--hotPink));
+}
+
+
+
+
+
+/* contact from  */
+
+
+
+#contact{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: var(--hotPink);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+form input ,form textarea{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: var(--paleLilac);
+font-size: 16px;
+border-radius: 20px;
+text-align: center;
+color: var(--royalPurple);
+}
+
+form button{
+    padding: 15px;
+    background: var(--coral);
+    color: var(--paleLilac);
+    font-size: 18px;
+    border:0;
+    outline:none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+form button:hover{
+    background: var(--turquoise);
+    transition: 1s;
+
+}
+
+

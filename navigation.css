@@ -1,0 +1,126 @@
+:root{
+    --electricBlue:#00FFFF;
+    --hotPink: #FF69B4;
+    --turquoise: #40E0D0;
+    --coral: #FF7F50;
+    --sunnyYellow: #FFFF00;
+   --paleLilac: #E6E6FA;
+   --royalPurple: #6A0DAD;
+   --DarkerPink:#bd5489;
+  
+  }
+
+
+
+
+/* navigation bar setting */
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-height: 120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    background: rgba(128, 0, 128, 0.135);
+}
+
+/* links to tabs */
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.navbar ul li a {
+    border: 3px transparent solid;
+    padding: 10px;
+    padding-bottom: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+.navbar ul li a:hover {
+    border: 3px black solid;
+    padding: 10px;
+    background-image: linear-gradient(180deg, var(--sunnyYellow), var(--coral));
+    box-shadow: rgba(0, 0, 0, 0.582) 10px 10px;
+    transition: 0.5s;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+/* hambuger button */
+.navbar .toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* resume button for download */
+.action_btn {
+    background-image: linear-gradient(180deg, var(--sunnyYellow), var(--coral));
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* DropShadow meun */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(128, 128, 128, 0.342);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 4;
+}
+
+/* when menu is open */
+.dropdown_menu.open {
+    height: 240px;
+    color: white !important;
+
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
